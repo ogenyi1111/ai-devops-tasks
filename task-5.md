@@ -16,3 +16,13 @@ Client Layer    <--->    Application Layer    <--->    Data Layer
 [Data Flow]
 Request Flow:  Client → Application Server → Database
 Response Flow: Database → Application Server → Client
+
++--------+      +--------+      +--------+
+|        |      |        |      |        |
+| Client | ---> | Server | ---> |  DB    |
+|        |      |        |      |        |
++--------+      +--------+      +--------+
+     ^              ^              ^
+     |              |              |
+     +--------------+--------------+
+          Response Flow
