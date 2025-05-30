@@ -35,8 +35,12 @@ services:
     environment:
       POSTGRES_PASSWORD: password  # Added colon for consistency
 
-# Explanation of fixes:
-# 1. Added missing colon after 'ports' in app service
-# 2. Changed POSTGRES_PASSWORD=password to POSTGRES_PASSWORD: password
-#    (both syntaxes work, but using : is more consistent with YAML style)
+The changes made:
+Added the missing colon after ports in the app service
+Fixed the indentation to be consistent throughout
+Added a colon after POSTGRES_PASSWORD for better YAML syntax (though both with and without colon would work for environment variables)
+This is a valid docker-compose.yml file that defines three services:
+A web server using nginx on port 80
+An application service that builds from the current directory and runs on port 3000
+A PostgreSQL database with a password set
 
